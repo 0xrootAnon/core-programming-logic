@@ -1,0 +1,11 @@
+#node packages
+node_modules/
+
+#log files
+*.log
+
+#editor config
+.vscode/
+
+#windows system junk
+Thumbs.db
