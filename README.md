@@ -26,6 +26,13 @@ Each problem has:
 
 ---
 
+# TL;DR
+
+- As of July 9, 2025, project's still in progress, I'm actively grinding (17-18 commits today), y'all gotta be patient for this elixir, once you truly get it, every programming language will feel like child's play.
+
+---
+
+
 ## Topics Covered
 
 - Numbers  
