@@ -21,3 +21,4 @@ function checkEvenOdd(num){
     }
 }
 checkEvenOdd(65674795);
+
