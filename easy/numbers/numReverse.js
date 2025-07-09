@@ -18,3 +18,4 @@ function reverseNumber(num) {
     return parseInt(rev);
 }
 console.log(reverseNumber(1234));
+
