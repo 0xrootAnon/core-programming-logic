@@ -1,6 +1,6 @@
 # Sieve of Eratosthenes : Count/List All Primes up to `n`
 
-This method efficiently generates all prime numbers ≤ `n` using the **Sieve of Eratosthenes** algorithm. It runs in **O(n log log n)** time and is highly optimized for range-based prime queries.
+This method efficiently generates all prime numbers <= `n` using the **Sieve of Eratosthenes** algorithm. It runs in **O(n log log n)** time and is highly optimized for range-based prime queries.
 
 ---
 
