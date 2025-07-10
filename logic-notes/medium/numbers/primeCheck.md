@@ -1,6 +1,6 @@
 # Prime Number Check; Logic & Code Explained 
 
-This document explains **6 different methods** to check whether a number is prime using JavaScript, with each method fully commented and explained for beginner to intermediate learners.
+This document explains **5 different methods** to check whether a number is prime using JavaScript, with each method fully commented and explained for beginner to intermediate learners.
 
 ---
 
@@ -19,7 +19,6 @@ A **prime number** is a natural number greater than 1 that has **no positive div
 | `isPrimeSqrt`          |  Fast           | Iterative   | Medium-sized values    | Loops only till √n                    |
 | `isPrimeFast`          |  Very Fast     | Optimized   | Large numbers          | Skips even numbers                    |
 | `isPrimeRecursive`     |  Slow           | Recursive   | Learning recursion     | Not memory-efficient                  |
-| `sieveOfEratosthenes`  |  Very Fast     | Bulk prime gen | All primes ≤ `n`     | Not for checking single number        |
 | `isProbablyPrime`      |  Probabilistic  | Randomized  | Large numbers (crypto) | May give false positives (approximate)|
 
 ---
@@ -86,29 +85,7 @@ function isPrimeRecursive(n, i = 2) {
 
 ---
 
-# Method 5: Sieve of Eratosthenes (Find all primes ≤ n)
-
-```js
-function sieveOfEratosthenes(limit) {
-  const primes = Array(limit + 1).fill(true);  // start assuming all numbers are prime
-  primes[0] = primes[1] = false;               // 0 and 1 are not prime
-  for (let i = 2; i * i <= limit; i++) {
-    if (primes[i]) {
-      for (let j = i * i; j <= limit; j += i) {
-        primes[j] = false;                     // mark all multiples of i as not prime
-      }
-    }
-  }
-  return primes
-    .map((isPrime, i) => isPrime ? i : -1)     // map index to number if prime
-    .filter(n => n !== -1);                    // remove non-primes
-}
-```
-**Logic:** Marks all multiples of each prime number as non-prime in one go. Very efficient for generating all primes up to a given number.
-
----
-
-# Method 6: Fermat's Little Theorem (Probabilistic)
+# Method 5: Fermat's Little Theorem (Probabilistic)
 
 ```js
 function isProbablyPrime(n, k = 5) {
@@ -129,5 +106,4 @@ function isProbablyPrime(n, k = 5) {
 Each method has its own strengths and best use cases:
 -  **Learning?** Start with `isPrimeBrute` or `isPrimeRecursive`
 -  **Need a fast single check?** Use `isPrimeFast`
--  **Want to generate many primes?** Use `sieveOfEratosthenes`
 -  **Working with cryptography or huge values?** Use `isProbablyPrime` (with caution)
