@@ -37,21 +37,7 @@ function isPrimeRecursive(n, i = 2) {
   return isPrimeRecursive(n, i + 1);
 }
 
-// method 5: Sieve of Eratosthenes (generate all primes ≤ n) [returns an array of all primes up to `limit`]
-function sieveOfEratosthenes(limit) {
-  const primes = Array(limit + 1).fill(true);
-  primes[0] = primes[1] = false;
-  for (let i = 2; i * i <= limit; i++) {
-    if (primes[i]) {
-      for (let j = i * i; j <= limit; j += i) {
-        primes[j] = false;
-      }
-    }
-  }
-  return primes.map((isPrime, i) => isPrime ? i : -1).filter(n => n !== -1);   // collect all indices which are still true (i.e., prime)
-}
-
-// method 6: Fermat's Little Theorem (probabilistic) [not 100% accurate, good for very large numbers]
+// method 5: Fermat's Little Theorem (probabilistic) [not 100% accurate, good for very large numbers]
 function isProbablyPrime(n, k = 5) {
   if (n <= 1 || n === 4) return false;
   if (n <= 3) return true;
