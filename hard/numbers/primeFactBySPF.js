@@ -10,7 +10,6 @@ function computeSPF(maxLimit) {
   }
   return spf;
 }
-
 //use precomputed SPF to factorize any number <= maxLimit in O(log n) time
 function getPrimeFactors(n, spf) {
   const factors = [];
