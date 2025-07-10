@@ -17,7 +17,7 @@ An **Armstrong number** (also called a narcissistic number) is a number that is 
 
 ---
 
-## 🔍 How It Works (Example: 9474)
+##  How It Works (Example: 9474)
 
 - **Digits** = 4  
 - **Split**: 9, 4, 7, 4  
