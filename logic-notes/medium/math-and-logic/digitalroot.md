@@ -55,5 +55,3 @@ digitalRootMath(9875);
   - Recursive: O(log n) — based on digit length
   - Math Trick: O(1) — constant time
 - Both return the same result, but method 2 is significantly faster.
-
----
