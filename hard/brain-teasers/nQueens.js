@@ -26,3 +26,5 @@ function solveNQueens(n) {
   backtrack(0);
   return result;
 }
+
+
