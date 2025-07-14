@@ -1,6 +1,6 @@
-name:  Question
-about: Ask about usage, concepts, or learning resources
-title: "[QUESTION] short description"
+name: Question
+description: Ask about usage, logic doubts, or implementation help.
+title: "[QUESTION] <short description>"
 labels: ["question"]
 assignees: []
 
@@ -8,11 +8,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        Have a question about CPL’s functions or logic? Ask away!
+        Got a question about CPL’s functions or logic? Ask away below.
 
   - type: input
     id: question
     attributes:
       label: Your question
-      placeholder: “How do I use `rotateArray` to rotate left by 2?”
+      placeholder: "How do I use `rotateArray` to rotate left by 2?"
+    validations:
       required: true

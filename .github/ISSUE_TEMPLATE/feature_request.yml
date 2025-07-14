@@ -1,6 +1,6 @@
-name:  Feature request
-about: Suggest a new algorithm or enhancement
-title: "[FEATURE] short description"
+name: Feature Request
+description: Suggest a new algorithm or logic enhancement.
+title: "[FEATURE] <short description>"
 labels: ["enhancement"]
 assignees: []
 
@@ -14,7 +14,8 @@ body:
     id: feature
     attributes:
       label: Feature description
-      placeholder: “What would you like to see added or changed?”
+      placeholder: "What would you like to see added or changed?"
+    validations:
       required: true
 
   - type: textarea
@@ -23,16 +24,5 @@ body:
       label: Use case
       description: How will this feature be used?
       placeholder: e.g., “I need `gcd` function to simplify fractions.”
-
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: Alternatives considered
-      description: What have you tried so far?
-      placeholder: e.g., “Used my own implementation, but it’s too slow.”
-
-  - type: input
-    id: priority
-    attributes:
-      label: Priority (low/medium/high)
-      placeholder: “medium”
+    validations:
+      required: true
