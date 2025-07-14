@@ -1,0 +1,47 @@
+name:  Bug report
+about: Report a reproducible problem in the code or docs
+title: "[BUG] short description"
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve **Core Programming Logic**!  
+        Please fill in the sections below so we can fix this fast.
+
+  - type: input
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe how to reproduce the issue.
+      placeholder: |
+        1. Clone the repo and `cd js`
+        2. In Node REPL:  
+           ```js
+           const { isPalindrome } = require('./string/isPalindrome.js');
+           console.log(isPalindrome('RaceCar'));
+           ```
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+      placeholder: e.g., “should return `true` for palindromes”
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened?
+      placeholder: e.g., “got `false` instead”
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Node / OS version
+      placeholder: e.g., “Node v16.13.0 on Ubuntu 20.04”
