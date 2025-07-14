@@ -1,4 +1,4 @@
-//Method 1: beginner level
+//method 1: beginner level
 let num = 2006;                                         //providing value as beginners won't be able to take inputs from users (Tutors focus more on Js for web);
 let sum = 0;                                            //intitialising var;
 while (num>0){                                          //loop which ends when num becomes 0;
@@ -8,7 +8,7 @@ while (num>0){                                          //loop which ends when n
 }
 console.log(`Sum of digits is ${sum}`);                 //printing result :)
 
-//Method 2: for pros
+//method 2: for pros
 const readline = require("readline"); //importing inbuilt readline module
 const rl = readline.createInterface({ //creating I/O interface named "r1" where r1 is an object
   input: process.stdin, //takes input from keyboard

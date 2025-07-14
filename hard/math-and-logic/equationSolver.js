@@ -1,4 +1,4 @@
-//e.g. problem: Find (x, y) such that 2x + 3y = 18
+//e.g. problem: find (x, y) such that 2x + 3y = 18
 
 function solveEquation(limit) {
   const solutions = [];

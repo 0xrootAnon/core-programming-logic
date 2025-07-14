@@ -1,4 +1,4 @@
-//Count vowels/consonants 
+//count vowels/consonants 
 
 function countVowelsConsonants(str) {
   let vowels = 0, consonants = 0;

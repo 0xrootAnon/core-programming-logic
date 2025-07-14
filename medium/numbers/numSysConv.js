@@ -1,4 +1,3 @@
-
 //decimal to binary/octal/hexadecimal (using built in f(x))
 const decimal = 255;
 console.log("Decimal to Binary:", decimal.toString(2)); 
@@ -10,24 +9,24 @@ const binary = "1010";
 console.log("Binary to Decimal (parseInt):", parseInt(binary, 2)); 
 
 //binary to decimal (method 2: Manual logic)
-// Multiply each bit from left to right by 2 and accumulate
+//multiply each bit from left to right by 2 and accumulate
 function binaryToDecimal(bin) {
   let result = 0;
   for (let i = 0; i < bin.length; i++) {
-    result = result * 2 + Number(bin[i]); // Shifts left and adds current digit
+    result = result * 2 + Number(bin[i]); //shifts left and adds current digit
   }
   return result;
 }
 console.log("Binary to Decimal (manual):", binaryToDecimal("1010")); 
 
-//decimal to binary (Manual logic)
+//decimal to binary (manual logic)
 function decimalToBinary(n) {
   let result = '';
   while (n > 0) {
-    result = (n % 2) + result; // prepend remainder (reversed binary)
+    result = (n % 2) + result; //prepend remainder (reversed binary)
     n = Math.floor(n / 2);
   }
-  return result || "0"; // handle case when n = 0
+  return result || "0"; //handle case when n = 0
 }
 console.log("Decimal to Binary (manual):", decimalToBinary(10)); 
 
@@ -54,6 +53,6 @@ console.log("Decimal to Hex:", (26).toString(16));
 //recursive decimal to binary
 function decToBinRec(n) {
   if (n === 0) return '';
-  return decToBinRec(Math.floor(n / 2)) + (n % 2); // build string in reverse
+  return decToBinRec(Math.floor(n / 2)) + (n % 2); //build string in reverse
 }
 console.log("Decimal to Binary (recursion):", decToBinRec(10)); 

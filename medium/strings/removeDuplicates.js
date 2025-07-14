@@ -1,4 +1,4 @@
-//Remove duplicate characters 
+//remove duplicate characters 
 
 //method 1: using set
 function removeDuplicates(str) {

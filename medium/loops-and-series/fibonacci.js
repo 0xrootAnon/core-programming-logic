@@ -1,6 +1,6 @@
-//Print Fibonacci series 
-//next: Nth Fibonacci number (recursive & iterative) 
-//after that: Factorial of a number (iterative/recursive)
+//print fibonacci series 
+//next: nth fibonacci number (recursive & iterative) 
+//after that: factorial of a number (iterative/recursive)
 
 //method 1: using for
 let n0 = 10; // number of terms

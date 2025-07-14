@@ -1,4 +1,4 @@
-//Longest Palindromic Substring 
+//longest palindromic substring 
 
 //method: expand around corner
 function longestPalindromicSubstring(s) {
@@ -11,8 +11,8 @@ function longestPalindromicSubstring(s) {
   };
 
   for (let i = 0; i < s.length; i++) {
-    let [l1, r1] = expand(i, i);     // Odd length
-    let [l2, r2] = expand(i, i + 1); // Even length
+    let [l1, r1] = expand(i, i);     //odd length
+    let [l2, r2] = expand(i, i + 1); //even length
     if (r1 - l1 > end - start) [start, end] = [l1, r1];
     if (r2 - l2 > end - start) [start, end] = [l2, r2];
   }

@@ -1,4 +1,4 @@
-# 📦Factorial of a Number
+# Factorial of a Number
 
 - What is a Factorial?
 -The factorial of a non-negative integer n is the product of all positive integers less than or equal to n.

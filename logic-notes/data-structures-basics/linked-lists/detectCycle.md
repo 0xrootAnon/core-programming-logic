@@ -8,7 +8,7 @@
 
 ```js
 function hasCycle(head) {
-  let slow = head, fast = head;      // 🐢 slow = 1 step, 🐇 fast = 2 steps
+  let slow = head, fast = head;      // slow = 1 step,  fast = 2 steps
   while (fast && fast.next) {        // fast must not reach end
     slow = slow.next;                // move slow by 1
     fast = fast.next.next;           // move fast by 2

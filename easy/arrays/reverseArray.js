@@ -1,4 +1,4 @@
-//Reverse an array 
+//reverse an array 
 
 //method 1: built-in
 function reverseUsingBuiltIn(arr) {

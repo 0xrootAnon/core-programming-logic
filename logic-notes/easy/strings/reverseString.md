@@ -23,7 +23,7 @@ function reverseStringManual(str) {
   return reversed;
 }
 console.log(reverseStringManual("khwahish")); // Output: hsihawhk
-console.log(reverseString("khwahish"));       // Output: hsihawhk
+console.log(reverseString("khwahish"));       // Output: hawktuah
 ```
 
 ---

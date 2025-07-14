@@ -7,7 +7,7 @@ This code checks whether a string expression has **balanced brackets** using two
 ##  Code
 
 ```js
-// 🔹 Method A: Stack-based (handles (), {}, [])
+// Method A: Stack-based (handles (), {}, [])
 function isBalanced(expr) {
   const st = [];
   const pairs = { ')': '(', '}': '{', ']': '[' };
@@ -23,7 +23,7 @@ function isBalanced(expr) {
 ```
 
 ```js
-// 🔸 Method B: Counter-only (works only for '()')
+// Method B: Counter-only (works only for '()')
 function isBalancedCount(expr) {
   let c = 0;
   for (let ch of expr) {

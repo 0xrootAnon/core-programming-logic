@@ -1,4 +1,4 @@
-//Anagram check 
+//anagram check 
 
 //method 1: sort and compare
 function isAnagram(a, b) {

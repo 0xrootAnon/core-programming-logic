@@ -1,4 +1,4 @@
-// Sieve of Eratosthenes (generate all primes ≤ n) [returns an array of all primes up to `limit`]
+//sieve of Eratosthenes (generate all primes ≤ n) [returns an array of all primes up to `limit`]
 function sieveOfEratosthenes(limit) {
   const primes = Array(limit + 1).fill(true);
   primes[0] = primes[1] = false;

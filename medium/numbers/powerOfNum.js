@@ -1,4 +1,4 @@
-// To calculate base^exponent 
+//to calculate base^exponent 
 
 //method 1: using math fx
 const result1 = Math.pow(2, 3);  // 2^3 = 8

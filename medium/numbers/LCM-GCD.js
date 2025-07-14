@@ -1,7 +1,5 @@
 //   bro im tired but okayy :(
-// =============================
-//       GCD METHODS
-// =============================
+//--------------------------------------------------------------------for GCD:-------------------------------------------------------------------------------------------------
 
 //method 1: gcd by brute force
 function gcdBrute(a, b) {
@@ -15,12 +13,12 @@ function gcdBrute(a, b) {
   return gcd;
 }
 
-//method 2: gcd by euclidean (Recursive)
+//method 2: gcd by euclidean (recursive)
 function gcdRecursive(a, b) {
   return b === 0 ? a : gcdRecursive(b, a % b);
 }
 
-//method 3: gcd by euclidean (Iterative version)
+//method 3: gcd by euclidean (iterative version)
 function gcdIterative(a, b) {
   while (b !== 0) {
     const temp = b;
@@ -35,7 +33,7 @@ function gcdArray(arr) {
   return arr.reduce((acc, val) => gcdRecursive(acc, val));
 }
 
-//method 5: GCD - Binary (Stein's Algorithm)
+//method 5: gcd - binary (stein's algorithm)
 function binaryGCD(a, b) {
   if (a === b) return a;
   if (a === 0) return b;
@@ -51,10 +49,7 @@ function binaryGCD(a, b) {
   }
 }
 
-// =============================
-//       LCM METHODS
-// =============================
-
+//----------------------------------------------------------------------------------for LCM---------------------------------------------------------------------------------------
 //method 1: lcm by brute force
 function lcmBrute(a, b) {
   let max = Math.max(a, b);
@@ -82,9 +77,7 @@ function lcmRecursive(arr, index = 0) {
 }
 
 
-// =============================
-//          TESTSING
-// =============================
+//testing our hardwork
 console.log("===== GCD TESTS =====");
 console.log("gcdBrute(12, 18):", gcdBrute(12, 18));
 console.log("gcdRecursive(12, 18):", gcdRecursive(12, 18));

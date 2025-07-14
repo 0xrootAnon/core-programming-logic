@@ -1,4 +1,4 @@
-//Frequency count of characters 
+//frequency count of characters 
 
 function charFrequency(str) {
   const freq = {};

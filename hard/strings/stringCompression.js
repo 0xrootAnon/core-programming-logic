@@ -1,4 +1,4 @@
-//String compression 
+//string compression 
 
 //method: run length encoding [RLE]
 function compressString(str) {

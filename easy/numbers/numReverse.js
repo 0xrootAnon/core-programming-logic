@@ -1,4 +1,4 @@
-//Method 1: using mathematical logic
+//method 1: using mathematical logic
 let myNum = 9876;
 let reverse = 0;
     while (myNum>0){
@@ -8,7 +8,7 @@ let reverse = 0;
     }
 console.log(`Reversed number: ${reverse}`);
 
-//Method 2: using a function
+//method 2: using a function
 function reverseNumber(num) {
     let str = num.toString();
     let rev = "";

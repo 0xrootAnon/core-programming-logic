@@ -1,6 +1,6 @@
-//Nth fibonacci
+//nth fibonacci
 
-//method 1: For loop
+//method 1: for loop
 function fibForLoop(n) {
   if (n <= 1) return n;
   let a = 0, b = 1;
@@ -12,7 +12,7 @@ function fibForLoop(n) {
   return b;
 }
 
-//method 2: While Loop
+//method 2: while loop
 function fibWhileLoop(n) {
   if (n <= 1) return n;
   let a = 0, b = 1, i = 2;
@@ -25,7 +25,7 @@ function fibWhileLoop(n) {
   return b;
 }
 
-//method 3: Do...While Loop
+//method 3: do...while loop
 function fibDoWhileLoop(n) {
   if (n <= 1) return n;
   let a = 0, b = 1, i = 2;
@@ -38,7 +38,7 @@ function fibDoWhileLoop(n) {
   return b;
 }
 
-//method 4: Dynamic Programming Array (Tabulation)
+//method 4: dynamic [rogramming array (tabulation)
 function fibDPArray(n) {
   if (n <= 1) return n;
   const dp = Array(n + 1); // array to store all fib numbers
@@ -50,7 +50,7 @@ function fibDPArray(n) {
   return dp[n];
 }
 
-//method 5: 2-Element Array Rotation (Space Optimized)
+//method 5: 2-element array rotation (space optimized)
 function fibOptimizedArray(n) {
   if (n <= 1) return n;
   const fibs = [0, 1]; // only 2 elements used, rotated

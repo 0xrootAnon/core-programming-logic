@@ -1,4 +1,4 @@
-//Find largest/smallest element 
+//find largest/smallest element 
 
 //method 1: manual loop
 function findMinMax(arr) {

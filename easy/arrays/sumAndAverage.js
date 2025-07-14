@@ -1,4 +1,4 @@
-//Sum/average of elements 
+//sum/average of elements 
 
 //method 1: using loop
 function sumAndAverage(arr) {

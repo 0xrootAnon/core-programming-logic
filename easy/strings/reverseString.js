@@ -5,7 +5,7 @@ function reverseString(str) {
   return str.split('').reverse().join('');
 }
 
-//method 2: Manual loop
+//method 2: manual loop
 function reverseStringManual(str) {
   let reversed = '';
   for (let i = str.length - 1; i >= 0; i--) {

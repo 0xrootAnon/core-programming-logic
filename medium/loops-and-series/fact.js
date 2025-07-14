@@ -1,6 +1,6 @@
 //factorial of a number
 
-//method 1: For Loop
+//method 1: for loop
 function factorialForLoop(n) {
   let result = 1;
   for (let i = 2; i <= n; i++) {
@@ -9,7 +9,7 @@ function factorialForLoop(n) {
   return result;
 }
 
-//method 2: While Loop
+//method 2: while loop
 function factorialWhileLoop(n) {
   let result = 1, i = 2;
   while (i <= n) {
@@ -19,7 +19,7 @@ function factorialWhileLoop(n) {
   return result;
 }
 
-//method 3: Do...While Loop
+//method 3: do...while loop
 function factorialDoWhileLoop(n) {
   let result = 1, i = 2;
   if (n === 0) return 1;
@@ -30,7 +30,7 @@ function factorialDoWhileLoop(n) {
   return result;
 }
 
-//method 4: Precomputed Table (Lookup)
+//method 4: precomputed table (lookup)
 const factorialTable = (() => {
   const fact = [1]; // fact[0] = 0! = 1
   for (let i = 1; i <= 100; i++) {
@@ -42,7 +42,7 @@ function factorialFromTable(n) {
   return factorialTable[n];
 }
 
-//method 5: BigInt Factorial (for very large n)
+//method 5: bigint factorial (for very large n)
 function factorialBigInt(n) {
   let result = 1n;
   for (let i = 2n; i <= BigInt(n); i++) {

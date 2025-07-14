@@ -1,4 +1,4 @@
-//A number `n` is an Armstrong number if: abc... = a^d + b^d + c^d + ... (where d = total digits)
+//a number `n` is an armstrong number if: abc... = a^d + b^d + c^d + ... (where d = total digits)
 function isArmstrong(num) {
     const original = num;
     const digits = num.toString().length;  // number of digits
@@ -14,7 +14,7 @@ console.log(isArmstrong(153));
 console.log(isArmstrong(9474));  
 console.log(isArmstrong(123));   
 
-// To print All Armstrong Numbers in a Range:-
+//to print all armstrongs in a Range:-
 function printArmstrongInRange(start, end) {
     for (let i = start; i <= end; i++) {
         if (isArmstrong(i)) {
@@ -23,3 +23,9 @@ function printArmstrongInRange(start, end) {
     }
 }
 printArmstrongInRange(1, 1000); 
+
+//yoooooooooo, my arms are strong too, cuz i code 17hrs/day
+ /*function cpldevstatus{
+    console.log("admin never had a life :(");
+ }*/
+

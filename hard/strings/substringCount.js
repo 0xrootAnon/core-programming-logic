@@ -1,4 +1,4 @@
-//Substring count / pattern search (Brute force) 
+//substring count / pattern search (using brute force) 
 
 function countSubstring(str, pattern) {
   let count = 0;
